@@ -5,6 +5,14 @@ import App from "./App.vue"
 
 import router from "./routers/router.js"
 
+import MintUI from "mint-ui"
+import "mint-ui/lib/style.css"
+// 加载
+Vue.use(MintUI)
+
+import "./lib/mui/css/mui.css"
+import "./lib/mui/css/icons-extra.css"
+
 var vm = new Vue({
     el: "#app",
     router,
